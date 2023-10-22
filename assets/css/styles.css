@@ -1,0 +1,522 @@
+:root {
+    --offwhite: #F2F2F2;
+    --offblack: #1A1A1A;
+    --orangeCustom: #FF9D00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    font-family: "Futura-PT";
+    font-style: normal;
+    background-color: var(--offwhite);
+    color: var(--offwhite);
+    margin: 0;
+    left: 0;
+}
+
+body {
+    background-image: url(/assets/img/header-background.jpg);
+    height: 100vh;
+    height: 100lvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+footer {
+    padding-top: 2em;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: var(--offblack);
+    color: var(--offwhite);
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 305px;
+}
+
+footer img {
+    margin-right: 0;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    max-width: 280px;
+}
+
+.contact-list p{
+    display: flex;
+}
+
+body img {
+    object-fit: cover;
+}
+
+.nav-container {
+    border-bottom: var(--orangeCustom) 12px solid;
+}
+
+div {
+    display: block;
+}
+
+a {
+    color: #F2F2F2;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.top-bar {
+    position: absolute;
+    background-color: var(--offblack);
+    height: 70px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    display: block;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100vw;
+    max-width: 1520px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+
+section {
+    position: relative;
+    max-width: 1520px;
+    color: var(--offblack);
+    background-color: var(--offwhite);
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 89%;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.separator {
+    display: none;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--offblack);
+    height: 70px;
+}
+
+.brand-logo {
+    top: 0;
+    padding-top: 25px;
+    padding-left: 3%;
+    height: 100%;
+    width: 25%;
+}
+
+.brand-image {
+    position: relative;
+    max-width: 205%;
+}
+
+.menu-item {
+    position: relative;
+    text-align: center;
+    width: 25%;
+}
+
+.menu-item a {
+    font-weight: 600;
+    position: relative;
+    top: 30%;
+}
+
+
+.orange-bar {
+    position: absolute;
+    background-color: var(--orangeCustom);
+    height: 2vw;
+    margin-top: -7px;
+    left: 25%;
+    width: 50%;
+    z-index: -1;
+}
+
+
+.cover {
+    position: relative;
+    background-size: cover;
+    height: calc(100lvh - 70px);
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+}
+
+
+.cover-text {
+    position: relative;
+    top: 40%;
+    transform: translateY(-60%);
+    text-align: center;
+    line-height: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 9vw;
+    z-index: 2;
+    width: 80%;
+}
+
+.bio img {
+    order: -1;
+}
+
+.hello > *, .bio > *, .etc > * {
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 90%;
+}
+
+.hello {
+    margin-top: 3em;
+}
+
+.etc {
+    margin-bottom: 3em;
+}
+
+#section-img {
+    padding: 5vh 0;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 583px;
+    max-height: 420px;
+}
+
+.section-header, .section-description {
+    margin: 0 auto;
+}
+
+.section-description {
+    text-align: justify;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.section-description a {
+    color: var(--offblack);
+    text-decoration: underline;
+}
+
+.section-header {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.section-content {
+    margin-top: 25px;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 275px;
+}
+
+.section-header p {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.contact-header p {
+    position: relative;
+    margin-top: 10px;
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+.orange-bar-bottom {
+    position: absolute;
+    background-color: var(--orangeCustom);
+    margin-top: -45px;
+    left: 0;
+    width: 95%;
+    max-width: 450px;
+    height: 12px;
+    z-index: 0;
+}
+
+
+/* Small phones (300px and up) */
+@media only screen and (min-width: 18.75em) {
+    html, footer a, .section a {
+        font-size: 16px;
+    }
+
+    .menu-item a {
+        font-size: 22px;
+    }
+
+    .menu-item {
+        position: relative;
+        text-align: center;
+        width: 25%;
+        border-bottom: var(--orangeCustom) 12px solid;
+    }
+
+    .nav-container {
+        border-bottom: none;
+    }
+
+    .brand-image {
+        max-width: 154px;
+        max-height: 22px;
+    }
+
+    section {
+        display: block;
+        align-items: stretch; 
+    }
+
+    #section-img {
+        margin-top: 4vh;
+        max-width: 400px;
+    }
+
+    .section-header {
+        font-size: 45px;
+    }
+
+    .section-header, .section-description {
+        margin: 0 auto;
+    }
+
+    .bio img {
+        order: -1;
+    }
+
+    .orange-bar {
+        margin-top: -10px;
+        left: 25%;
+        width: 50%;
+    }
+
+    .contact-header {
+        font-size: 60px;
+    }
+    
+}
+
+/* Medium phones (560px and up) */
+@media only screen and (min-width: 35em) {
+    html, footer a, .section a {
+        font-size: 16px;
+    }
+
+    .container {
+        min-width: 300px;
+    }
+
+    .cover-text {
+        top: 50%;
+        transform: translateY(-55.85%);
+        text-align: left;
+        font-size: 60px;
+    }
+
+    .orange-bar {
+        width: 65vw;
+        left: -30vw;
+    }
+
+    footer {
+        padding-left: 10%;
+        justify-content: flex-start;
+    }
+
+    footer img {
+        max-width: 350px;
+        margin-right: 5vw;
+    }
+
+    .orange-bar-bottom {
+        width: 65%;
+        max-width: 600px;
+    }
+    
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 40em) {
+    html, footer a, .section a {
+        font-size: 18px;
+    }
+
+    section {
+        width: 98%;
+    }
+
+    #section-img {
+        margin-top: 4vh;
+        max-width: 420px;
+    }
+
+    .section-header, .section-description {
+        width: 90%;
+    }
+
+    .section-header {
+        font-size: 60px;
+    }
+
+    .cover-text {
+        font-size: 60px;
+    }
+
+    .brand-logo {
+        padding-left: 10%;
+    }
+
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+    html, footer a, .section a {
+        font-size: 20px;
+    }
+
+    section {
+        padding-top: 0;
+    }
+
+    #section-img {
+    }
+
+    .section-header, .section-description {
+        width: 100%;
+    }
+
+    .cover-text {
+        font-size: 75px;
+    }
+
+    .orange-bar {
+        margin-top: -16px;
+    }
+
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+
+    section {
+        align-items: center;
+        width: 98%;
+    }
+
+
+    .separator {
+        display: block;
+        margin: 30px auto;
+        max-width: min(80%, 1520px);
+        
+    }
+
+    .hello > *, .bio > *, .etc > * {
+    max-width: 583px;
+    }
+
+    .section img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .bio img {
+        order: 2;
+    }
+
+    .cover-text {
+        font-size: 95px;
+    }
+
+    .orange-bar{
+        margin-top: -20px;
+    }
+
+    footer img {
+        left: 0;
+        margin: 0 auto;
+    }
+
+    footer {
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-left: 0;
+        position: relative;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .orange-bar-bottom {
+        position: relative;
+        background-color: var(--orangeCustom);
+        margin-top: -45px;
+        left: 0;
+        width: 600px;
+        height: 12px;
+        z-index: 0;
+    }
+
+    .contact-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 1em;
+        gap: 20%;
+    } 
+
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+
+    .cover-text {
+        font-size: 125px;
+    }
+
+
+}
+
+/* (>1500px and up) */
+@media only screen and (min-width: 93.75em) {
+
+    .container {
+        overflow-x: visible;
+    }
+
+    .orange-bar {
+        position: absolute;
+        left: 0;
+        width: 60vw;
+        margin-left: -30vw;
+        margin-top: -20px;
+        max-height: 30px;
+    }
+
+}
