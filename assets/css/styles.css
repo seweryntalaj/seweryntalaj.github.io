@@ -84,7 +84,7 @@ header {
 }
 
 .container {
-    width: 100vw;
+    /*width: 100vw;*/
     max-width: 1520px;
     margin: 0 auto;
     overflow-x: hidden;
